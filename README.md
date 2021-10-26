@@ -1,1 +1,1 @@
-# Chinese-Character-Traditional-Scene-Text
+# Chinese Character (Traditional) Scene Text
