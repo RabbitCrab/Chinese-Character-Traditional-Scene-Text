@@ -53,7 +53,7 @@ The public dataset from the competition provided can be download from [HERE](htt
 Run the following command:
 
 ```
-python final_test.py --img 1280 --weight final_weight.pt --augment --source data/public/img
+python final_test.py --img 1280 --weight final_weight.pt --augment --source data/public/img_public
 ```
 
 When finished, the result will be saved and output as `output_final.csv`.
