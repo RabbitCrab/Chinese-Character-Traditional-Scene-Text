@@ -5,7 +5,7 @@ This code is used for the competition [繁體中文場景文字辨識競賽－�
 ---
 <font size = "3">
 
-<b>NOTE</b><br>
+<b>NOTE</b> <br>
 This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using this code will not compatible with the code provided on [YOLOv5](https://github.com/ultralytics/yolov5).
 
 </font>
@@ -24,7 +24,7 @@ $ pip install -r requirements.txt
 ```
 
 ### Inference
-Please download the YOLOv5 weight (final_weight.pt) and EfficientNet model (eff_final_imgsz64.pt). [HERE]()
+Please download the YOLOv5 weight (final_weight.pt) and EfficientNet model (eff_final_imgsz64.pt). [HERE]() <br>
 Place the EfficientNet model under the [resnet_training](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/tree/main/resnet_training)
 
 ```
