@@ -1,6 +1,6 @@
 # Chinese Character (Traditional) Scene Text
 
-This code is used for the competition [繁體中文場景文字辨識競賽－進階賽：繁體中文場景文字辨識](https://tbrain.trendmicro.com.tw/Competitions/Details/16). The competition is about scene text recognition in Taiwan (Traditional Chinese). This code included [YOLOv5](https://github.com/ultralytics/yolov5) for text detection and [EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch) for Chinese character image classification. The dataset for text detection included [Google Landmarks Dataset V2](https://github.com/cvdfoundation/google-landmark) as background image while for image classification included [Single_char_image_generator](https://github.com/rachellin0105/Single_char_image_generator) as character generator. Both the dataset also included the data given by the organiser. 
+This code is used for the competition [繁體中文場景文字辨識競賽－進階賽：繁體中文場景文字辨識](https://tbrain.trendmicro.com.tw/Competitions/Details/16). The competition is about scene text recognition in Taiwan (Traditional Chinese). This code assembled [YOLOv5](https://github.com/ultralytics/yolov5) and [EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch) in one. YOLOv5 for text detection and EfficientNet-PyTorch for Chinese character image classification. The dataset for text detection included [Google Landmarks Dataset V2](https://github.com/cvdfoundation/google-landmark) as background images while for image classification included [Single_char_image_generator](https://github.com/rachellin0105/Single_char_image_generator) as character generator. Both the dataset also included the data given by the organiser. 
 
 ---
 <font size = "3">
@@ -49,7 +49,7 @@ The `final_test.py` is designed to run for the competition [繁體中文場景�
 Hence, several parts in the code requires to change accordingly. <br>
 Line 33: the path for `task.csv` that needs to read in. <br>
 Line 306: you probably need to change the output file name. <br>
-The public data can be download from [HERE](https://drive.google.com/file/d/1YzbssB91aEOBRS7iGWOtBoCZKbLHAhJo/view?usp=sharing). <br><br>
+The public dataset from the competition provided can be download from [HERE](https://drive.google.com/file/d/1YzbssB91aEOBRS7iGWOtBoCZKbLHAhJo/view?usp=sharing). <br><br>
 Run the following command:
 
 ```
@@ -62,12 +62,47 @@ When finished, the result will be saved and output as `output_final.csv`.
 ## Dataset
 There are two datasets used for the YOLOv5 training and EfficientNet training. <br>
 Dataset: <br>
-[YOLOv5]() <br>
+[Dataset for YOLOv5](https://drive.google.com/file/d/1awQpoOd7GkdA6FyPxbNKXRScdynWC5fI/view?usp=sharing) <br>
 [EfficientNet_images]() <br>
 [EfficientNet_labels]() <br>
 
 
 ## Training
+### YOLOv5
+Place the dataset for YOLOv5 as following:
+
+```
+|---datasets
+|   |---contest
+|   |   |---annotations
+|   |   |   |---train.txt
+|   |   |   |---val.txt
+|   |   |   |---text.yaml
+|   |   |---images
+|   |   |   |---train
+|   |   |   |   |---img_1.jpg
+|   |   |   |---val
+|   |   |   |   |---img_3653.jpg
+|   |   |---labels
+|   |   |   |---train
+|   |   |   |   |---img_1.txt
+|   |   |   |---val
+|   |   |   |   |---img_3653.txt
+|---project
+
+```
+Download YOLOv5 model from the [latest YOLOv5 release](https://github.com/ultralytics/yolov5/releases) <br>
+Train with the following command:
+
+```
+# Single GPU
+python train.py --img 1280 --weight yolov5x6.pt --data ../datasets/contest/annotations/text.yaml --batch-size 16 # Use the largest batch size as GPU allows
+```
+
+#### Custom Dataset
+Please follow the [documentation](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) and run the above command.
+
+### EfficientNet
 
 
 ## Reference
