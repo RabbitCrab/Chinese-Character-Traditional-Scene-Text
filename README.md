@@ -60,7 +60,11 @@ When finished, the result will be saved and output as `output_final.csv`.
 
 
 ## Dataset
-There are two datasets, datasets is used for the YOLOv5 training
+There are two datasets used for the YOLOv5 training and EfficientNet training. <br>
+Dataset: <br>
+[YOLOv5]() <br>
+[EfficientNet_images]() <br>
+[EfficientNet_labels]() <br>
 
 
 ## Training
