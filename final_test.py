@@ -303,7 +303,7 @@ def run(weights='yolov5s.pt',  # model.pt path(s)
                         break
                     # print predicted result
                     # print(result)
-    with open('output_final_1.csv', 'w', newline='', encoding='utf-8') as output_file:
+    with open('output_final.csv', 'w', newline='', encoding='utf-8') as output_file:
         writer = csv.writer(output_file)
         writer.writerows(final_output)
 
