@@ -9,7 +9,7 @@ This code is used for the competition [繁體中文場景文字辨識競賽－�
 This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using this code will not compatible with the code provided on [YOLOv5](https://github.com/ultralytics/yolov5).
 
 </font>
----
+
 
 ## Qucik Start
 ### Installation
