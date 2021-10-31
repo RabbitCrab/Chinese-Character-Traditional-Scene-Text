@@ -27,7 +27,18 @@ $ pip install -r requirements.txt
 Please download the YOLOv5 weight (final_weight.pt) and EfficientNet model (eff_final_imgsz64.pt). [HERE]()
 Place the EfficientNet model under the [resnet_training](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/tree/main/resnet_training)
 
+```
+Project
+|---READ.md
+|---final_test.py
+|---final_weight.pt
+|---resnet_training
+|   |---train_efficientnet.py
+|   |---eff_final_imgsz64.pt
+```
+
 `final_test.py` runs inference on a `path/` (directory) and output the result in `*.csv`
+
 
 
 ## Training
