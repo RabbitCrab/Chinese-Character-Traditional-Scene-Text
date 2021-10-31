@@ -59,13 +59,11 @@ python final_test.py --img 1280 --weight final_weight.pt --augment --source data
 When finished, the result will be saved and output as `output_final.csv`.
 
 
-## Training
-
-
-
-
 ## Dataset
 There are two datasets, datasets is used for the YOLOv5 training
+
+
+## Training
 
 
 ## Citation
