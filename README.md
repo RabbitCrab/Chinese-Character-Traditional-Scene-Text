@@ -63,8 +63,8 @@ When finished, the result will be saved and output as `output_final.csv`.
 There are two datasets used for the YOLOv5 training and EfficientNet training. <br>
 Dataset: <br>
 [Dataset for YOLOv5](https://drive.google.com/file/d/1awQpoOd7GkdA6FyPxbNKXRScdynWC5fI/view?usp=sharing) <br>
-[EfficientNet_images]() <br>
-[EfficientNet_labels]() <br>
+[EfficientNet_images](https://drive.google.com/file/d/1HSrA5a20zAuGtIgHfpCaN3NXwKMddWmd/view?usp=sharing) <br>
+[EfficientNet_labels](https://drive.google.com/file/d/12ER-I_WiymmxqtjEQ3WKbH8SZfZV22kk/view?usp=sharing) <br>
 
 
 ## Training
@@ -100,7 +100,8 @@ python train.py --img 1280 --weight yolov5x6.pt --data ../datasets/contest/annot
 ```
 
 #### Custom Dataset
-Please follow the [documentation](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) and run the above command.
+Please follow the [documentation](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) and run the above command. <br>
+**Again, take note that the latest YOLOv5 is not compatible with this code.**
 
 ### EfficientNet
 
@@ -121,6 +122,16 @@ Train with the following command:
 cd resnet_training
 python train_efficientnet.py
 ```
+
+### Custom Dataset
+1. Create your own mapping relation between the characters and numbers in JSON file. Example: [new_num_to_word.json](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/new_num_to_word.json)
+2. Create label for each of the image.
+3. Create `*.txt` to locate the image paths for training.
+4. Change line 22 in [train_efficientnet.py](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/train_efficientnet.py) to your folder name.
+5. Change line 79 in [train_efficientnet.py](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/train_efficientnet.py) to your number of class(es).
+6. Change line 89 in [train_efficientnet.py](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/train_efficientnet.py) to your
+relation JSON file.
+
 
 ## Reference
 1. [YOLOv5](https://github.com/ultralytics/yolov5)
