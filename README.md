@@ -10,7 +10,6 @@ This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using 
 
 </font>
 
-
 ---
 ## Qucik Start
 ### Installation
@@ -34,21 +33,22 @@ Project
 |---final_weight.pt # Not neccessary need to follow
 |---data
 |   |---public
-|   |   |---img
+|   |   |---img_public
 |   |   |---Task2_Public_String_Coordinate.csv
 |   |---private
-|   |   |---img
+|   |   |---img_private
 |   |   |---Task2_Private_String_Coordinate.csv
 |---resnet_training
 |   |---train_efficientnet.py
 |   |---eff_final_imgsz64.pt
 ```
 
-`final_test.py` runs inference on a `path/` (directory) and output the result in `*.csv` <br>
+<br> `final_test.py` runs inference on a `path/` (directory) and output the result in `*.csv` <br>
 The `final_test.py` is designed to run for the competition [繁體中文場景文字辨識競賽－進階賽：繁體中文場景文字辨識](https://tbrain.trendmicro.com.tw/Competitions/Details/16). <br>
 Hence, several parts in the code requires to change accordingly. <br>
-Line 33: the `task.csv` that needs to read in. <br>
+Line 33: the path for `task.csv` that needs to read in. <br>
 Line 306: you probably need to change the output file name. <br>
+The public data can be download from [HERE](). <br>
 
 ```
 python final_test.py --img 1280 --weight final_weight.pt --augment --source data/public/img
