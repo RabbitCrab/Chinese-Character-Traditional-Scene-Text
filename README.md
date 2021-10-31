@@ -5,8 +5,8 @@ This code is used for the competition [繁體中文場景文字辨識競賽－�
 ---
 <font size = "3">
 
-<b>NOTE</b>
-This code **IS NOT** the latest version of YOLOv5. Therefore, training using this code will not compatible with the code provided on [YOLOv5](https://github.com/ultralytics/yolov5).
+<b>NOTE</b><br>
+This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using this code will not compatible with the code provided on [YOLOv5](https://github.com/ultralytics/yolov5).
 
 </font>
 ---
