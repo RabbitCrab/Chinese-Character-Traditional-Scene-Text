@@ -5,7 +5,7 @@ This code is used for the competition [繁體中文場景文字辨識競賽－�
 ---
 <font size = "3">
 
-<b>NOTE</b> <br>
+<b>:exclamation:NOTE:exclamation:</b> <br>
 This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using this code will not compatible with the code provided on [YOLOv5](https://github.com/ultralytics/yolov5).
 
 </font>
@@ -31,14 +31,23 @@ Place the EfficientNet model under the [resnet_training](https://github.com/Rabb
 Project
 |---READ.md
 |---final_test.py
-|---final_weight.pt
+|---final_weight.pt # Not neccessary need to follow
+|---data
+|   |---public
+|   |   |---img
+|   |   |---Task2_Public_String_Coordinate.csv
+|   |---private
+|   |   |---img
+|   |   |---Task2_Private_String_Coordinate.csv
 |---resnet_training
 |   |---train_efficientnet.py
 |   |---eff_final_imgsz64.pt
 ```
 
-`final_test.py` runs inference on a `path/` (directory) and output the result in `*.csv`
-
+`final_test.py` runs inference on a `path/` (directory) and output the result in `*.csv` <br>
+The `final_test.py` is designed to run for the competition [繁體中文場景文字辨識競賽－進階賽：繁體中文場景文字辨識](https://tbrain.trendmicro.com.tw/Competitions/Details/16). <br>
+Hence, several parts in the code requires to change accordingly. <br>
+Line 33 
 
 
 ## Training
