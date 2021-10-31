@@ -126,7 +126,7 @@ python train_efficientnet.py
 ### Custom Dataset
 1. Create your own mapping relation between the characters and numbers in JSON file. Example: [new_num_to_word.json](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/new_num_to_word.json)
 2. Create label for each of the image.
-3. Create `*.txt` to locate the image paths for training.
+3. Create `*.txt` to locate the image paths for training. Example: [new_crop_total.txt](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/new_crop_total.txt)
 4. Change line 22 in [train_efficientnet.py](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/train_efficientnet.py) to your folder name.
 5. Change line 79 in [train_efficientnet.py](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/train_efficientnet.py) to your number of class(es).
 6. Change line 89 in [train_efficientnet.py](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/train_efficientnet.py) to your
