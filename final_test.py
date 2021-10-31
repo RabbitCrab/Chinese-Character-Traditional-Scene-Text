@@ -147,7 +147,7 @@ def run(weights='yolov5s.pt',  # model.pt path(s)
 
     # Text recognition model
     text_model = TextModel(5038)  # text model of small image size
-    text_model.load_state_dict(torch.load('resnet_training/eff_final_no_val_imgsz64.pt'))
+    text_model.load_state_dict(torch.load('resnet_training/eff_final_imgsz64.pt'))
     text_model.eval()
 
     # Dataloader
