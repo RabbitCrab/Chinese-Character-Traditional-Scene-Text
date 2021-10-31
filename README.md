@@ -6,7 +6,7 @@ This code is used for the competition [繁體中文場景文字辨識競賽－�
 <font size = "3">
 
 <b>NOTE :exclamation:</b> <br>
-This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using this code will not compatible with the code provided on [YOLOv5](https://github.com/ultralytics/yolov5).
+This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using this code will not compatible with the code provided on [YOLOv5](https://github.com/ultralytics/yolov5), or vice versa.
 
 </font>
 
@@ -17,7 +17,7 @@ This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using 
 [**Python>=3.6.0**](https://www.python.org/) is required with all
 [requirements.txt](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/requirements.txt) installed including
 
-```bash
+```
 $ git clone https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text.git
 $ cd Chinese-Character-Traditional-Scene-Text
 $ pip install -r requirements.txt
