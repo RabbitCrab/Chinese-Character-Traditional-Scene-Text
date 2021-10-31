@@ -70,4 +70,10 @@ Dataset: <br>
 ## Training
 
 
-## Citation
+## Reference
+1. [YOLOv5](https://github.com/ultralytics/yolov5)
+2. [EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch)
+
+
+## Contributions
+
