@@ -11,6 +11,7 @@ This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using 
 </font>
 
 
+---
 ## Qucik Start
 ### Installation
 [**Python>=3.6.0**](https://www.python.org/) is required with all
