@@ -49,7 +49,7 @@ The `final_test.py` is designed to run for the competition [繁體中文場景�
 Hence, several parts in the code requires to change accordingly. <br>
 Line 33: the path for `task.csv` that needs to read in. <br>
 Line 306: you probably need to change the output file name. <br>
-The public dataset from the competition provided can be download from [HERE](https://drive.google.com/file/d/1YzbssB91aEOBRS7iGWOtBoCZKbLHAhJo/view?usp=sharing). <br><br>
+The public dataset from the competition provided can be download from [HERE](https://drive.google.com/file/d/1E09fzyjJLAtciDi7fInn-CsJyhVevhUw/view?usp=sharing). <br><br>
 Run the following command:
 
 ```
