@@ -88,7 +88,7 @@ Place the dataset for YOLOv5 as following:
 |   |   |   |   |---img_1.txt
 |   |   |   |---val
 |   |   |   |   |---img_3653.txt
-|---project
+|---Project
 
 ```
 Download YOLOv5 model from the [latest YOLOv5 release](https://github.com/ultralytics/yolov5/releases) <br>
@@ -104,6 +104,23 @@ Please follow the [documentation](https://github.com/ultralytics/yolov5/wiki/Tra
 
 ### EfficientNet
 
+```
+Project
+|---resnet_training
+|   |---train_efficientnet.py
+|   |---eff_final_imgsz64.pt
+|   |---crop_image_new
+|   |   |---img_1.jpg
+|   |---crop_label_new
+|   |   |---img_1.txt
+```
+
+Train with the following command:
+
+```
+cd resnet_training
+python train_efficientnet.py
+```
 
 ## Reference
 1. [YOLOv5](https://github.com/ultralytics/yolov5)
