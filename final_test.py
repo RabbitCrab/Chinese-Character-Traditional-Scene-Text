@@ -30,7 +30,7 @@ import math
 num_to_word = json.load(open('resnet_training/new_num_to_word.json', 'r', encoding='utf-8'))
 
 csv_content = []
-with open('data/private/Task2_Private_String_Coordinate.csv', newline='', encoding='utf-8') as csvfile:
+with open('data/public/Task2_Public_String_Coordinate.csv', newline='', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         processed_row = []
