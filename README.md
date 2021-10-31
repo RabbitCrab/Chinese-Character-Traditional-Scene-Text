@@ -29,7 +29,7 @@ Place the EfficientNet model under the [resnet_training](https://github.com/Rabb
 
 ```
 Project
-|---READ.md
+|---README.md
 |---final_test.py
 |---final_weight.pt # Not neccessary need to follow
 |---data
