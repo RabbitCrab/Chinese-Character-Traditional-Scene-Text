@@ -7,12 +7,14 @@ This code is used for the competition [繁體中文場景文字辨識競賽－�
 </div>
 
 ---
+<div style="text-align: justify">
 <font size = "3">
 
 <b>NOTE :exclamation:</b> <br>
 This code <b>IS NOT</b> the latest version of YOLOv5. Therefore, training using this code will not compatible with the code provided on [YOLOv5](https://github.com/ultralytics/yolov5), or vice versa.
 
 </font>
+</div>
 
 ---
 
@@ -48,6 +50,8 @@ Project
 |   |---eff_final_imgsz64.pt
 ```
 
+<div style="text-align: justify">
+
 <br> `final_test.py` runs inference on a `path/` (directory) and output the result in `*.csv` <br>
 The `final_test.py` is designed to run for the competition [繁體中文場景文字辨識競賽－進階賽：繁體中文場景文字辨識](https://tbrain.trendmicro.com.tw/Competitions/Details/16). <br>
 Hence, several parts in the code requires to change accordingly. <br>
@@ -55,6 +59,8 @@ Line 33: the path for `task.csv` that needs to read in. <br>
 Line 306: you probably need to change the output file name. <br>
 The public dataset from the competition provided can be download from [HERE](https://drive.google.com/file/d/1E09fzyjJLAtciDi7fInn-CsJyhVevhUw/view?usp=sharing). <br><br>
 Run the following command:
+
+</div>
 
 ```
 python final_test.py --img 1280 --weight final_weight.pt --augment --source data/public/img_public
@@ -104,9 +110,14 @@ python train.py --img 1280 --weight yolov5x6.pt --data ../datasets/contest/annot
 ```
 
 #### Custom Dataset
+
+<div style="text-align: justify">
+
 Please follow the [documentation](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) and run the above command. <br>
 **Again, take note that the latest YOLOv5 is not compatible with this code.** <br>
 Note: This code used Google Landmarks Dataset v2 as background images. Images are mainly from western countries to prevent contradictions for Chinese characters.
+
+</div>  
 
 ### EfficientNet
 
@@ -129,6 +140,9 @@ python train_efficientnet.py
 ```
 
 ### Custom Dataset
+
+<div style="text-align: justify">
+
 1. Create your own mapping relation between the characters and numbers in JSON file. Example: [new_num_to_word.json](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/new_num_to_word.json)
 2. Create label for each of the image.
 3. Create `*.txt` to locate the image paths for training. Example: [new_crop_total.txt](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/new_crop_total.txt)
@@ -138,6 +152,8 @@ python train_efficientnet.py
 relation JSON file.
 
 Note: You may use [Single_char_image_generator](https://github.com/rachellin0105/Single_char_image_generator) to generate more character image.
+
+</div>
 
 
 ## Reference
