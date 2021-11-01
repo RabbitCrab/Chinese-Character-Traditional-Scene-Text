@@ -31,7 +31,7 @@ $ pip install -r requirements.txt
 
 ### Inference
 Please download the YOLOv5 weight ([final_weight.pt](https://drive.google.com/file/d/1HLKZAnQrFpJbp3NOgxTPf5UHFSIl-_O_/view?usp=sharing)) and EfficientNet model ([eff_final_imgsz64.pt](https://drive.google.com/file/d/1oCd0Xz2BGgIoNq8sBoElnIwwrDE-fkE0/view?usp=sharing)). <br>
-Place the EfficientNet model under the [resnet_training](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/tree/main/resnet_training)
+Place the EfficientNet model under the [resnet_training](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/tree/main/resnet_training).
 
 ```
 Project
@@ -52,7 +52,7 @@ Project
 
 <div style="text-align: justify">
 
-<br> `final_test.py` runs inference on a `path/` (directory) and output the result in `*.csv` <br>
+<br> `final_test.py` runs inference on a `path/` (directory) and output the result in `*.csv`. <br>
 The `final_test.py` is designed to run for the competition [繁體中文場景文字辨識競賽－進階賽：繁體中文場景文字辨識](https://tbrain.trendmicro.com.tw/Competitions/Details/16). <br>
 Hence, several parts in the code requires to change accordingly. <br>
 Line 33: the path for `task.csv` that needs to read in. <br>
@@ -101,7 +101,7 @@ Place the dataset for YOLOv5 as following:
 |---Project
 
 ```
-Download YOLOv5 model from the [latest YOLOv5 release](https://github.com/ultralytics/yolov5/releases) <br>
+Download YOLOv5 model from the [latest YOLOv5 release](https://github.com/ultralytics/yolov5/releases). <br>
 Train with the following command:
 
 ```
