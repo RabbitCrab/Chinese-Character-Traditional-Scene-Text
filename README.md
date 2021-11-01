@@ -1,6 +1,7 @@
 # Chinese Character (Traditional) Scene Text
-
+<div style="text-align: justify">
 This code is used for the competition [繁體中文場景文字辨識競賽－進階賽：繁體中文場景文字辨識](https://tbrain.trendmicro.com.tw/Competitions/Details/16). The competition is about scene text recognition in Taiwan (Traditional Chinese). This code assembled [YOLOv5](https://github.com/ultralytics/yolov5) and [EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch) in one. YOLOv5 for text detection and EfficientNet-PyTorch for Chinese character image classification. The dataset for text detection included [Google Landmarks Dataset V2](https://github.com/cvdfoundation/google-landmark) as background images while for image classification included [Single_char_image_generator](https://github.com/rachellin0105/Single_char_image_generator) as character generator. Both the dataset also included the data given by the organiser. 
+</div>
 
 ---
 <font size = "3">
@@ -101,7 +102,8 @@ python train.py --img 1280 --weight yolov5x6.pt --data ../datasets/contest/annot
 
 #### Custom Dataset
 Please follow the [documentation](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) and run the above command. <br>
-**Again, take note that the latest YOLOv5 is not compatible with this code.**
+**Again, take note that the latest YOLOv5 is not compatible with this code.** <br>
+Note: This code used Google Landmarks Dataset v2 as background images. Images are mainly from western countries to prevent contradictions for Chinese characters.
 
 ### EfficientNet
 
@@ -132,10 +134,14 @@ python train_efficientnet.py
 6. Change line 89 in [train_efficientnet.py](https://github.com/RabbitCrab/Chinese-Character-Traditional-Scene-Text/blob/main/resnet_training/train_efficientnet.py) to your
 relation JSON file.
 
+Note: You may use [Single_char_image_generator](https://github.com/rachellin0105/Single_char_image_generator) to generate more character image.
+
 
 ## Reference
 1. [YOLOv5](https://github.com/ultralytics/yolov5)
 2. [EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch)
+3. [Single_char_image_generator](https://github.com/rachellin0105/Single_char_image_generator)
+4. [Google Landmarks Dataset V2](https://github.com/cvdfoundation/google-landmark)
 
 
 ## Contributions
