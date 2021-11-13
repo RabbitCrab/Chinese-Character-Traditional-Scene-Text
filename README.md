@@ -164,4 +164,4 @@ Note: You may use [Single_char_image_generator](https://github.com/rachellin0105
 
 
 ## Contributions
-1. [cocoowl](https://github.com/cocoowl)
+:ant: [cocoowl](https://github.com/cocoowl)
