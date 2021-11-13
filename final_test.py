@@ -148,6 +148,7 @@ def run(weights='yolov5s.pt',  # model.pt path(s)
     # Text recognition model
     text_model = TextModel(5038)  # text model of small image size
     text_model.load_state_dict(torch.load('resnet_training/eff_final_imgsz64.pt'))
+    text_model.to(device)
     text_model.eval()
 
     # Dataloader
@@ -272,7 +273,7 @@ def run(weights='yolov5s.pt',  # model.pt path(s)
                         text_img = im0[y1:y2, x1:x2]
                         text_img = cv2.resize(text_img, (64, 64))
                         text_img = torch.from_numpy(text_img.transpose(2, 0, 1)).float()
-                        text_img = text_img[None, :, :, :]
+                        text_img = text_img[None, :, :, :].to(device)
                         pred = text_model(text_img)
                         texts.append(num_to_word[str(pred.argmax(dim=1).item())])
                     if len(texts):
