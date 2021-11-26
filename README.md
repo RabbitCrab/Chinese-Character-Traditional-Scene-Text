@@ -165,3 +165,4 @@ Note: You may use [Single_char_image_generator](https://github.com/rachellin0105
 
 ## Contributions
 :ant: [cocoowl](https://github.com/cocoowl)
+:lion: [Silvia-HYLin](https://github.com/Silvia-HYLin)
