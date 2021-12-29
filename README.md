@@ -163,6 +163,6 @@ Note: You may use [Single_char_image_generator](https://github.com/rachellin0105
 4. [Google Landmarks Dataset V2](https://github.com/cvdfoundation/google-landmark)
 
 
-## Contributions
+## Contributors
 :lion: [cocoowl](https://github.com/cocoowl) <br>
 :apple: [Silvia-HYLin](https://github.com/Silvia-HYLin)
